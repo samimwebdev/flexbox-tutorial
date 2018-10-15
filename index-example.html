@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox-Fundamentals</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+        /* .container, */
+        .navigation {
+            display: flex;
+            justify-content: flex-end;
+            flex-flow: row wrap;
+            /* justify-content: space-around; */
+
+        }
+
+        .navigation {
+            list-style-type: none;
+            text-transform: uppercase;
+
+
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: deepskyblue;
+            margin: 10px;
+        }
+
+        @media all and (max-width: 800px) {
+            .navigation {
+                justify-content: space-around
+            }
+        }
+
+        @media all and (max-width: 500px) {
+            .navigation {
+                flex-direction: column;
+            }
+        }
+
+        .item {
+            /* flex: 1 300px; */
+        }
+
+        .item-1 {}
+
+        .item-3 {}
+    </style>
+</head>
+
+<body>
+    <h1>Flexbox-Fundamentals </h1>
+
+    <div class="container">
+
+        <!-- <div class="item item-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, dolorem minima? Vitae,
+            recusandae. Quam porro officiis, enim harum accusantium voluptas?</div>
+        <div class="item item-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore iure reiciendis
+            mollitia non ad voluptas quia aut sit quaerat reprehenderit?</div> -->
+        <!-- <div class="item item-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, dolorem minima? Vitae,
+            recusandae. Quam porro officiis,
+            enim harum accusantium voluptas?</div> -->
+        <!-- <div class="item item-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, dolorem minima? Vitae,
+            recusandae. Quam porro officiis,
+            enim harum accusantium voluptas?</div> -->
+
+        <ul class="navigation">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">login</a></li>
+
+        </ul>
+    </div>
+</body>
+
+</html>
